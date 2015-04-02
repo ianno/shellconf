@@ -1,2 +1,2 @@
-# vimconf
-My vim config file
+# shellconf
+My set of shell config files
