@@ -72,9 +72,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 
 # Freeze ctrl commands interpretation. Used to save with ctrl-s in vim
-alias vim="stty stop '' -ixoff ; vim"
+#alias vim="stty stop '' -ixoff ; vim"
 # `Frozing' tty, so after any command terminal settings will be restored
-ttyctl -f
+#ttyctl -f
 
 
 
