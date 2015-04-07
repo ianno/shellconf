@@ -218,8 +218,8 @@ map <Leader>m <plug>NERDTreeTabsToggle<CR>
 
 "save with ctrl-s
 noremap <silent> <C-S> :update<CR>
-vnoremap <silent> <C-S> <C-C>:update<CR>
-inoremap <silent> <C-S> <C-O>:update<CR>
+vnoremap <silent> <C-S> <Esc>:update<CR>
+inoremap <silent> <C-S> <Esc>:update<CR>
 
 "" Add the virtualenv's site-packages to vim path
 "py << EOF
