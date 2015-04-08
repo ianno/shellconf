@@ -221,6 +221,14 @@ noremap <silent> <C-S> :update<CR>
 vnoremap <silent> <C-S> <Esc>:update<CR>
 inoremap <silent> <C-S> <Esc>:update<CR>
 
+"map ctrl-/ and alt-] to ctag (go to and new tab)
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+map <Leader>/ <CR>:tselect 
+
+"map Leader-l to taglistToggle
+map <Leader>l :TlistToggle<CR>
+
 "" Add the virtualenv's site-packages to vim path
 "py << EOF
 "import os
