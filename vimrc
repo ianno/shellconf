@@ -23,6 +23,8 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'https://github.com/xolox/vim-misc'
+Plugin 'https://github.com/xolox/vim-easytags'
 
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -228,6 +230,9 @@ map <Leader>/ <CR>:tselect
 
 "map Leader-l to taglistToggle
 map <Leader>l :TlistToggle<CR>
+
+"automatic generates tags in asynchronous mode
+let g:easytags_async=1
 
 "" Add the virtualenv's site-packages to vim path
 "py << EOF
